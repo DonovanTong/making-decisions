@@ -107,10 +107,11 @@ let passingScore = 7;
 
 //CODE HERE
 while (score<7) {
-  for (i; i<=7; i++)
-  if (score != 7) {
+  for (i; i<7; i++)
+  if (score <= 7) {
     console.log("Your score is not high enough")
-  }
+  } 
+  break;
 }
 ////////// INTERMEDIATE PROBLEMS //////////
 
@@ -122,17 +123,36 @@ while (score<7) {
 */
 
 //CODE HERE
+let changeMyMind = true
 
+if (changeMyMind) {
+  let changeMyMind = false
+} else {
+  let changeMyMind = true
+}
 ////////// PROBLEM 10 //////////
 // Using the "not" operator (!), change the current value of changeMyMind to true (it should currently be set to false due to the if-else statement in Problem 9). After you change the value of changeMyMind, console.log it's new value (it should now read true).
 
 //CODE HERE
+while (changeMyMind != true) {
+  let changeMyMind = false
+}
 
+console.log(changeMyMind)
 ////////// ADVANCED PROBLEMS //////////
 
 ////////// PROBLEM 11 //////////
 
 let z = 5;
-// Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
+// Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 
+//5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
 
 //CODE HERE
+while (z>0) {
+  for (z=5; z>0; z--) {
+    if (z>0){
+    console.log(z,z-1,z-2,z-3,z-4)
+    }
+  }
+  break
+}
